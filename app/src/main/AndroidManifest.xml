@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.apposcarverso2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".model.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppOscarVersão2">
+        <activity
+            android:name=".activities.ConfirmarVotoActivity"
+            android:label="Votos"
+            android:parentActivityName=".activities.MenuActivity" />
+        <activity
+            android:name=".activities.DiretorActivity"
+            android:label="Diretores"
+            android:parentActivityName=".activities.MenuActivity" />
+        <activity
+            android:name=".activities.DetalhesFilmeActivity"
+            android:label="Detalhes"
+            android:parentActivityName=".activities.FilmesActivity" />
+        <activity
+            android:name=".activities.FilmesActivity"
+            android:label="Filmes"
+            android:parentActivityName=".activities.MenuActivity" />
+        <activity
+            android:name=".activities.MenuActivity"
+            android:label="Menu"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
